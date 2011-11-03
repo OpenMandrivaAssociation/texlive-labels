@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/labels
+# catalog-date 2009-09-29 00:01:21 +0200
+# catalog-license lppl1.2
+# catalog-version .13
 Name:		texlive-labels
 Version:	.13
 Release:	1
@@ -85,6 +91,7 @@ sheet being used.
 #- source
 %doc %{_texmfdistdir}/source/latex/labels/labels.dtx
 %doc %{_texmfdistdir}/source/latex/labels/labels.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -95,3 +102,5 @@ sheet being used.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
