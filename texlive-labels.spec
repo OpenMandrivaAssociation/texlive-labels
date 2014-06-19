@@ -1,12 +1,12 @@
 # revision 15878
 # category Package
 # catalog-ctan /macros/latex/contrib/labels
-# catalog-date 2009-09-29 00:01:21 +0200
+# catalog-date 2011-12-16 16:22:52 +0100
 # catalog-license lppl1.2
 # catalog-version .13
 Name:		texlive-labels
-Version:	.13
-Release:	7
+Version:	0.13
+Release:	8
 Summary:	Print sheets of sticky labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labels
@@ -91,17 +91,3 @@ sheet being used.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> .13-2
-+ Revision: 753074
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> .13-1
-+ Revision: 718801
-- texlive-labels
-- texlive-labels
-- texlive-labels
-- texlive-labels
-
