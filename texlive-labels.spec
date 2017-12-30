@@ -5,8 +5,8 @@
 # catalog-license lppl1.2
 # catalog-version .13
 Name:		texlive-labels
-Version:	0.13
-Release:	11
+Version:	.13
+Release:	1
 Summary:	Print sheets of sticky labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labels
