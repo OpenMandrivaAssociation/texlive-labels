@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/labels
-# catalog-date 2011-12-16 16:22:52 +0100
-# catalog-license lppl1.2
-# catalog-version .13
 Name:		texlive-labels
-Version:	.13
-Release:	2
+Version:	15878
+Release:	1
 Summary:	Print sheets of sticky labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labels
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ Rows, columns, borders can all be specified to match the label
 sheet being used.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -84,7 +78,8 @@ sheet being used.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
