@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Print sheets of sticky labels
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labels
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/labels
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labels.doc.r%{version}.tar.xz
